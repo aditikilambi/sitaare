@@ -1,0 +1,33 @@
+#home {
+	display: block;
+	max-width: 100%;
+}
+
+img {
+	width: 100%;
+}
+.navbar-inner {
+    background:transparent;
+}
+
+#title {
+	position: absolute;
+	bottom: 28vh;
+	color: white;
+	font-family:  'Avenir Next', 'Arial Black', sans-serif;
+	width: 100vw;
+}
+
+#sitaare {
+	text-align: center;
+	font-size: 80px;
+	font-weight: 3;
+	margin: 0;
+}
+
+#des {
+	text-align: center;
+	font-weight: 1;
+
+}
+
