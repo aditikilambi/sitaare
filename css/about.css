@@ -5,7 +5,7 @@
 
 .header {
 /*	position: fixed;
-*/	font-family:  'Avenir Next', 'Arial Black', sans-serif;
+*/	font-family:  'Avenir Next', 'Arial', sans-serif;
 	color: white;
 	text-align: right;
 	padding: 7%;
@@ -32,7 +32,7 @@
 .text {
 	padding: 5%;
 	color: white;
-	font-family:  'Avenir Next', 'Arial Black', sans-serif;
+	font-family:  'Avenir Next', 'Arial', sans-serif;
 }
 
 @media screen and (max-width: 1000px) {
@@ -54,6 +54,6 @@
 	.text {
 		padding-bottom: 10%;
 		color: white;
-		font-family:  'Avenir Next', 'Arial Black', sans-serif;
+		font-family:  'Avenir Next', 'Arial', sans-serif;
 	}
 }
