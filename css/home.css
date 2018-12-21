@@ -1,18 +1,22 @@
 #home {
-	display: block;
+	display: flex;
 	max-width: 100%;
+	height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
-img {
-	width: 100%;
-}
-.navbar-inner {
-    background:transparent;
+ 
+#homepic {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
 }
 
 #title {
 	position: absolute;
-	bottom: 28vh;
+	bottom: 35vh;
 	color: white;
 	font-family:  'Avenir Next', 'Arial Black', sans-serif;
 	width: 100vw;
@@ -23,11 +27,15 @@ img {
 	font-size: 80px;
 	font-weight: 3;
 	margin: 0;
+	opacity: 0.9;
+	text-shadow: 2px 2px 8px black;
 }
 
 #des {
 	text-align: center;
 	font-weight: 1;
+	opacity: 0.8;
+	text-shadow: 2px 2px 8px black;
 
 }
 

@@ -1,7 +1,33 @@
-#nav {
-	background: rgba(0,0,0,.5);
+html {
+    scroll-behavior: smooth;
 }
 
-#right {
-	align-items: right;
+#nav {
+	background: rgba(0,0,0,.5);
+	transition: background 200ms linear;
 }
+
+.rightalign {
+  justify-content: flex-end;
+}
+
+.navbar-nav a {
+	margin-left: 25px;
+	margin-right: 25px;
+	font-family:  'Avenir Next', 'Arial Black', sans-serif;
+	color: white !important;
+}
+
+.navbar-nav a:hover {
+	color: #D1D1D4 !important;
+	text-shadow: 2px 2px 8px black;
+	transition: all .35s ease-in-out;
+}
+
+
+
+.fixed-top.scrolled {
+  background-color: #770204 !important;
+  transition: background-color 200ms linear;
+}
+

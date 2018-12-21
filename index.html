@@ -9,41 +9,342 @@
 	    <!-- Bootstrap -->
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+	    <!-- Font Awesome -->
+
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	    <!-- Custom -->
 
 	    <link rel="stylesheet" href="./css/home.css">
 	    <link rel="stylesheet" href="./css/nav.css">
+	   	<link rel="stylesheet" href="./css/about.css">
+	   	<link rel="stylesheet" href="./css/listen.css">
+	   	<link rel="stylesheet" href="./css/members.css">
+
 
     <title>UCSD Sitaare</title>
   </head>
+
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-	<nav class="navbar fixed-top navbar-dark navbar-inverse" id='nav' >
-		<div class="container-fluid">
-	    	<div class="navbar-header">
-	      		<a class="navbar-brand" href="#"><img src='./images/logo.png'></a>
-	    	</div>
-   			<div class="collapse navbar-collapse" id='right'>
-			    <ul class="nav navbar-nav">
-			      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-			      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-			    </ul>
-		    </div>
-		</div>
-  	</nav>
+
+  	<nav id='nav' class="navbar fixed-top navbar-expand-md navbar-dark">
+    	<a class="navbar-brand" href="#"><img src='./images/logo.png'></a>
+ 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+        	<span class="navbar-toggler-icon"></span>
+        </button>
+    	<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+	        <ul class="navbar-nav ml-auto">
+	            <li class="nav-item">
+	                <a class="nav-link" href="#about">about</a>
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-link" href="#listen">listen</a>
+	            </li>
+	           	<li class="nav-item">
+	                <a class="nav-link" href="#members">members</a>
+	            </li>
+	           	<li class="nav-item">
+	                <a class="nav-link" href="#">gallery</a>
+	            </li>
+	           	<li class="nav-item">
+	                <a class="nav-link" href="#">contact</a>
+	            </li>
+	        </ul>
+    	</div>
+	</nav>
+
+
 	<div id='home'>
-		<img src='./images/fullteam.png'>
+		<img id='homepic' src='./images/fullteam.png'>
 		<div id='title'>
 			<h1 id='sitaare'>sitaare</h1>
 			<h2 id='des'>UCSD'S PREMIER SOUTH ASIAN A CAPPELLA TEAM</h2>
 		</div>
 	</div>
-  	</div>
+	<div id='about'>
+		<h1 class='header'>about</h1>
+		<div id='aboutimg'>
+			<img id='aboutimg' src='./images/about.png'>
+			<div class='text'>
+				<p>Sitaare is UCSD’s premier award-winning South Asian A cappella team. Since its inception in 2006, Sitaare has taken pride in its diverse vocal talent, continuing to explore ways to showcase variety and creativity in their repertoire. Sitaare enjoys performing different genres of both Indian and Western music, from Bollywood and Indian classical, to R&B and pop.  </p> 
+				<p> In addition to UCSD’s cultural events, Sitaare has had the opportunity to perform at community events, weddings, and corporate events in San Diego, the Bay Area, and beyond.</p>
+				<p> Sitaare always looks to push the boundaries of desi a cappella and reach for the stars.</p>
+			</div>
+		</div>
+	</div>
+	<div id='listen'>
+		<h1 class='header'>listen</h1>
+		<div id='video'>
+			<iframe width="560" height="315" align="middle" src="https://www.youtube.com/embed/dWfKw0v7xlc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div id='members'>
+		<h1 class='header'>members</h1>
+		<div id='membergrid'>
+			<div class='two'>
+				<div class='member'>
+					<div class='onhover'>
+						<div class='details'>
+							<p>Hometown: Delhi, India <br> 
+							Major: Math and Computer Science<br>
+							Graduating Class: 2020<br>
+							Sitaare since: 2017</p>
+						</div>
+						<img src='./images/holder.jpg'>
+					</div>
+					<div class='memberdes'>
+						<h3 class='name'>Ashvin Lakhwani</h3>
+						<h6 class='voice'>Captain/Tenor</h6>
+					</div>
+				</div>
+				<div class='member'>
+					<div class='onhover'>
+						<div class='details'>
+							<p>Hometown: Fremont, CA <br> 
+							Major: Computer Science<br>
+							Graduating Class: 2019<br>
+							Sitaare since: 2015</p>
+						</div>
+						<img src='./images/holder.jpg'>
+					</div>					
+					<div class='memberdes'>
+						<h3 class='name'>Harshul Kapoor</h3>
+						<h6 class='voice'>Captain/Vocal Percussion</h6>
+					</div>
+				</div>
+			</div>
+			<div class='three'>
+				<div class='member'>
+					<div class='onhover'>
+						<div class='details'>
+							<p>Hometown: Fremont, CA <br> 
+							Major: Biochemistry<br>
+							Graduating Class: 2020<br>
+							Sitaare since: 2017</p>
+						</div>
+						<img src='./images/holder.jpg'>
+					</div>
+						<div class='memberdes'>
+						<h3 class='name'>Akhil Murthy</h3>
+						<h6 class='voice'>Music Director/Bass</h6>
+					</div>
+				</div>				
+				<div class='member'>
+					<div class='onhover'>
+						<div class='details'>
+							<p>Hometown: Bangalore, India <br> 
+							Major: General Biology<br>
+							Graduating Class: 2020<br>
+							Sitaare since: 2017</p>
+						</div>
+						<img src='./images/holder.jpg'>
+					</div>
+					<div class='memberdes'>
+						<h3 class='name'>Samhita Iyer</h3>
+						<h6 class='voice'>Public Relations/Alto</h6>
+					</div>
+				</div>
+				<div class='member'>
+					<div class='onhover'>
+						<div class='details'>
+							<p>Hometown: San Ramon, CA <br> 
+							Major: Math and Computer Science<br>
+							Graduating Class: 2019<br>
+							Sitaare since: 2015</p>
+						</div>
+						<img src='./images/holder.jpg'>
+					</div>					
+					<div class='memberdes'>
+						<h3 class='name'>Abhinav Simha</h3>
+						<h6 class='voice'>Finance Chair/Tenor</h6>
+					</div>
+				</div>
+			</div>			
+			<div class='three'>
+				<div class='member'>
+					<div class='onhover'>
+						<div class='details'>
+							<p>Hometown: Cupertino, CA <br> 
+							Major: Cognitive Science/HCI<br>
+							Graduating Class: 2020<br>
+							Sitaare since: 2016</p>
+						</div>
+						<img src='./images/holder.jpg'>
+					</div>
+					<div class='memberdes'>
+						<h3 class='name'>Aditi Kilambi</h3>
+						<h6 class='voice'>Performance Lead/Alto</h6>
+					</div>
+				</div>				
+				<div class='member'>
+					<div class='onhover'>
+						<div class='details'>
+							<p>Hometown: Irvine, CA <br> 
+							Major: Data Science<br>
+							Graduating Class: 2020<br>
+							Sitaare since: 2017</p>
+						</div>
+						<img src='./images/holder.jpg'>
+					</div>						
+					<div class='memberdes'>
+						<h3 class='name'>Sai Mukund</h3>
+						<h6 class='voice'>Point Bass</h6>
+					</div>
+				</div>
+				<div class='member'>
+					<div class='onhover'>
+						<div class='details'>
+							<p>Hometown: San Ramon, CA <br> 				
+							Major: Computer Engineering<br>
+							Graduating Class: 2020<br>
+							Sitaare since: 2017</p>
+						</div>
+						<img src='./images/holder.jpg'>
+					</div>						
+					<div class='memberdes'>
+						<h3 class='name'>Aditi Gaur</h3>
+						<h6 class='voice'>Soprano</h6>
+					</div>
+				</div>
+			</div>			
+			<div class='three'>
+				<div class='member'>
+					<div class='onhover'>
+						<div class='details'>
+							<p>Hometown: Los Angeles, CA <br> 				Major: Physiology and Neuroscience<br>
+							Graduating Class: 2020<br>
+							Sitaare since: 2017</p>
+						</div>
+						<img src='./images/holder.jpg'>
+					</div>						
+					<div class='memberdes'>
+						<h3 class='name'>Rama Kelkar</h3>
+						<h6 class='voice'>Alto</h6>
+					</div>			
+				</div>				
+				<div class='member'>
+					<div class='onhover'>
+						<div class='details'>
+							<p>Hometown: San Ramon, CA <br>
+							Major: Bioengineering<br>
+							Graduating Class: 2021<br>
+							Sitaare since: 2017</p>
+						</div>
+						<img src='./images/holder.jpg'>
+					</div>						
+					<div class='memberdes'>
+						<h3 class='name'>Ishan Ranjan</h3>
+						<h6 class='voice'>Tenor</h6>
+					</div>
+				</div>
+				<div class='member'>
+					<div class='onhover'>
+						<div class='details'>
+							<p>Hometown: Irvine, CA <br>
+							Major: Data Science<br>
+							Graduating Class: 2021<br>
+							Sitaare since: 2018</p>
+						</div>
+						<img src='./images/holder.jpg'>
+					</div>						
+					<div class='memberdes'>
+						<h3 class='name'>Shweta Kumar</h3>
+						<h6 class='voice'>Soprano</h6>
+					</div>
+				</div>
+			</div>
+			<div class='three'>
+				<div class='member'>
+					<div class='onhover'>
+						<div class='details'>
+							<p>Hometown: Irvine, CA <br>
+							Major: Computer Science<br>
+							Graduating Class: 2021<br>
+							Sitaare since: 2018</p>
+						</div>
+						<img src='./images/holder.jpg'>
+					</div>						
+					<div class='memberdes'>
+						<h3 class='name'>Shreya Pagaldipti</h3>
+						<h6 class='voice'>Soprano</h6>
+					</div>
+				</div>				
+				<div class='member'>
+					<div class='onhover'>
+						<div class='details'>
+							<p>Hometown: New Delhi, India<br>
+							Major: Computer Science<br>
+							Graduating Class: 2020<br>
+							Sitaare since: 2018</p>
+						</div>
+						<img src='./images/holder.jpg'>
+					</div>						
+					<div class='memberdes'>
+						<h3 class='name'>Madhav Mathur</h3>
+						<h6 class='voice'>Bass</h6>
+					</div>
+				</div>
+				<div class='member'>
+					<div class='onhover'>
+						<div class='details'>
+							<p>Hometown: San Jose, CA <br>
+							Major: Cognitive Science<br>
+							Graduating Class: 2020<br>
+							Sitaare since: 2018</p>
+						</div>
+						<img src='./images/holder.jpg'>
+					</div>						
+					<div class='memberdes'>
+						<h3 class='name'>Prerana Sarma</h3>
+						<h6 class='voice'>Alto</h6>
+					</div>
+				</div>
+			</div>
+			<div class='two'>
+				<div class='member'>
+					<div class='onhover'>
+						<div class='details'>
+							<p>Hometown: San Diego, CA <br>
+							Major: Pharmacological Chemistry<br>
+							Graduating Class: 2021<br>
+							Sitaare since: 2018</p>
+						</div>
+						<img src='./images/holder.jpg'>
+					</div>						
+					<div class='memberdes'>
+						<h3 class='name'>Mira Chokshi</h3>
+						<h6 class='voice'>Alto</h6>
+					</div>
+				</div>
+				<div class='member'>
+					<div class='onhover'>
+						<div class='details'>
+							<p>Hometown: Cupertino, CA <br>
+							Major: Bioengineering<br>
+							Graduating Class: 2021<br>
+							Sitaare since: 2018</p>
+						</div>
+						<img src='./images/holder.jpg'>
+					</div>					
+					<div class='memberdes'>
+						<h3 class='name'>Aditi Gnanasekar</h3>
+						<h6 class='voice'>Alto</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
     <!-- Scripts -->
+
 	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+	    <script src='./js/nav.js'></script>
+
   </body>
 </html>
