@@ -1,3 +1,9 @@
+<?php
+if($_POST["message"]) {
+    mail("your@email.address", "Form to email message", $_POST["message"], "From: an@email.address");
+}
+?>
+
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -20,14 +26,18 @@
 	   	<link rel="stylesheet" href="./css/about.css">
 	   	<link rel="stylesheet" href="./css/listen.css">
 	   	<link rel="stylesheet" href="./css/members.css">
+	   	<link rel="stylesheet" href="./css/gallery.css">
+	   	<link rel="stylesheet" href="./css/contact.css">
 
+
+	   	<!-- For the Gallery -->
+	   	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
 
     <title>UCSD Sitaare</title>
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-
   	<nav id='nav' class="navbar fixed-top navbar-expand-md navbar-dark">
     	<a class="navbar-brand" href="#"><img src='./images/logo.png'></a>
  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
@@ -45,10 +55,10 @@
 	                <a class="nav-link" href="#members">members</a>
 	            </li>
 	           	<li class="nav-item">
-	                <a class="nav-link" href="#">gallery</a>
+	                <a class="nav-link" href="#gallery">gallery</a>
 	            </li>
 	           	<li class="nav-item">
-	                <a class="nav-link" href="#">contact</a>
+	                <a class="nav-link" href="#contact">contact</a>
 	            </li>
 	        </ul>
     	</div>
@@ -56,7 +66,7 @@
 	<div id='home'>
 		<img id='homepic' src='./images/fullteam.png'>
 		<div id='title'>
-			<h1 id='sitaare'>sitaare</h1>
+			<h1 id='sitaare'><img src='./images/titl2e.png'></h1>
 			<h2 id='des'>UCSD'S PREMIER SOUTH ASIAN A CAPPELLA TEAM</h2>
 		</div>
 	</div>
@@ -81,7 +91,7 @@
 		<h1 class='header'>members</h1>
 		<div id='membergrid'>
 			<div class='two'>
-				<div class='member'>
+				<div class='member1'>
 					<div class='onhover'>
 						<div class='details'>
 							<p>Hometown: Delhi, India <br> 
@@ -96,7 +106,7 @@
 						<h6 class='voice'>Captain/Tenor</h6>
 					</div>
 				</div>
-				<div class='member'>
+				<div class='member2'>
 					<div class='onhover'>
 						<div class='details'>
 							<p>Hometown: Fremont, CA <br> 
@@ -104,7 +114,7 @@
 							Graduating Class: 2019<br>
 							Sitaare since: 2015</p>
 						</div>
-						<img src='./images/holder.jpg'>
+						<img src='./images/member/harshul.jpg'>
 					</div>					
 					<div class='memberdes'>
 						<h3 class='name'>Harshul Kapoor</h3>
@@ -113,7 +123,7 @@
 				</div>
 			</div>
 			<div class='three'>
-				<div class='member'>
+				<div class='member1'>
 					<div class='onhover'>
 						<div class='details'>
 							<p>Hometown: Fremont, CA <br> 
@@ -128,7 +138,7 @@
 						<h6 class='voice'>Music Director/Bass</h6>
 					</div>
 				</div>				
-				<div class='member'>
+				<div class='member2'>
 					<div class='onhover'>
 						<div class='details'>
 							<p>Hometown: Bangalore, India <br> 
@@ -143,7 +153,7 @@
 						<h6 class='voice'>Public Relations/Alto</h6>
 					</div>
 				</div>
-				<div class='member'>
+				<div class='member1'>
 					<div class='onhover'>
 						<div class='details'>
 							<p>Hometown: San Ramon, CA <br> 
@@ -160,7 +170,7 @@
 				</div>
 			</div>			
 			<div class='three'>
-				<div class='member'>
+				<div class='member2'>
 					<div class='onhover'>
 						<div class='details'>
 							<p>Hometown: Cupertino, CA <br> 
@@ -175,7 +185,7 @@
 						<h6 class='voice'>Performance Lead/Alto</h6>
 					</div>
 				</div>				
-				<div class='member'>
+				<div class='member1'>
 					<div class='onhover'>
 						<div class='details'>
 							<p>Hometown: Irvine, CA <br> 
@@ -190,7 +200,7 @@
 						<h6 class='voice'>Point Bass</h6>
 					</div>
 				</div>
-				<div class='member'>
+				<div class='member2'>
 					<div class='onhover'>
 						<div class='details'>
 							<p>Hometown: San Ramon, CA <br> 				
@@ -207,10 +217,11 @@
 				</div>
 			</div>			
 			<div class='three'>
-				<div class='member'>
+				<div class='member1'>
 					<div class='onhover'>
 						<div class='details'>
-							<p>Hometown: Granada Hills, CA <br> 				Major: Physiology and Neuroscience<br>
+							<p>Hometown: Granada Hills, CA <br> 				
+							Major: Physiology and Neuroscience<br>
 							Graduating Class: 2020<br>
 							Sitaare since: 2017</p>
 						</div>
@@ -221,7 +232,7 @@
 						<h6 class='voice'>Alto</h6>
 					</div>			
 				</div>				
-				<div class='member'>
+				<div class='member2'>
 					<div class='onhover'>
 						<div class='details'>
 							<p>Hometown: San Ramon, CA <br>
@@ -236,12 +247,12 @@
 						<h6 class='voice'>Tenor</h6>
 					</div>
 				</div>
-				<div class='member'>
+				<div class='member1'>
 					<div class='onhover'>
 						<div class='details'>
 							<p>Hometown: Irvine, CA <br>
 							Major: Data Science<br>
-							Graduating Class: 2021<br>
+							Graduating Class: 2022<br>
 							Sitaare since: 2018</p>
 						</div>
 						<img src='./images/member/shweta.jpg'>
@@ -253,12 +264,12 @@
 				</div>
 			</div>
 			<div class='three'>
-				<div class='member'>
+				<div class='member2'>
 					<div class='onhover'>
 						<div class='details'>
 							<p>Hometown: Lake Forest, CA <br>
 							Major: Computer Science<br>
-							Graduating Class: 2021<br>
+							Graduating Class: 2022<br>
 							Sitaare since: 2018</p>
 						</div>
 						<img src='./images/member/shreya.jpg'>
@@ -268,7 +279,7 @@
 						<h6 class='voice'>Soprano</h6>
 					</div>
 				</div>				
-				<div class='member'>
+				<div class='member1'>
 					<div class='onhover'>
 						<div class='details'>
 							<p>Hometown: New Delhi, India<br>
@@ -283,7 +294,7 @@
 						<h6 class='voice'>Bass</h6>
 					</div>
 				</div>
-				<div class='member'>
+				<div class='member2'>
 					<div class='onhover'>
 						<div class='details'>
 							<p>Hometown: San Jose, CA <br>
@@ -300,30 +311,30 @@
 				</div>
 			</div>
 			<div class='two'>
-				<div class='member'>
+				<div class='member1'>
 					<div class='onhover'>
 						<div class='details'>
 							<p>Hometown: San Diego, CA <br>
 							Major: Pharmacological Chemistry<br>
-							Graduating Class: 2021<br>
+							Graduating Class: 2022<br>
 							Sitaare since: 2018</p>
 						</div>
-						<img src='./images/holder.jpg'>
+						<img src='./images/member/mira.jpg'>
 					</div>						
 					<div class='memberdes'>
 						<h3 class='name'>Mira Chokshi</h3>
 						<h6 class='voice'>Alto</h6>
 					</div>
 				</div>
-				<div class='member'>
+				<div class='member2'>
 					<div class='onhover'>
 						<div class='details'>
 							<p>Hometown: Cupertino, CA <br>
 							Major: Bioengineering<br>
-							Graduating Class: 2021<br>
+							Graduating Class: 2022<br>
 							Sitaare since: 2018</p>
 						</div>
-						<img src='./images/holder.jpg'>
+						<img src='./images/member/aditign.jpg'>
 					</div>					
 					<div class='memberdes'>
 						<h3 class='name'>Aditi Gnanasekar</h3>
@@ -333,16 +344,67 @@
 			</div>
 		</div>
 	</div>
+	<div id='gallery'>
+		<h1 class='header'>gallery</h1>
+		<div id = 'galleries'>
+			<h2 class='galleryheader'>Sitaare 2018-2019</h2>
+         	<div class="galleria">
+         		<img src='./images/holder.jpg'>
+       		</div>
+       		<br>
+       		<br>
+       		<h2 class='galleryheader'>Sitaare 2017-2018</h2>
+       		<div class="galleria">
+         		<img src='https://photos.smugmug.com/Sahana-Acappella/i-XdVVzKb/0/25edde17/X3/DSC_0148-X3.jpg'>
+         		<img src='https://photos.smugmug.com/Sahana-Acappella/i-rB9Z5gd/0/ec0256d7/X3/DSC_0318-X3.jpg'>
+         		<img src='https://photos.smugmug.com/Sahana-Acappella/i-Gg2xL26/0/db94d6cc/X3/DSC_0060-X3.jpg'>
+       		</div>
+       		<br>
+       		<br>
+       		<h2 class='galleryheader'>Sitaare 2016-2017</h2>
+       		<div class="galleria">
+         		<img src='./images/holder.jpg'>
+       		</div>
+       		<br>
+       		<p style='color: white'> Would you like to see your photo featured? <a href="#contact"> Contact us! </a></p>
+        </div>
+	</div>
+	<div id='contact'>
+		<h1 class='header'>contact us</h1>
+		<div class='row'>
+		<div class='contactform'>
+			<h4 style='color: white'>Send Sitaare a Message</h4>
+			<br>
+			<form action="https://formspree.io/ucsdsitaare@gmail.com" method="POST">
+			  <div class="form-group">
+			    <label for="nameinp">Name</label>
+			    <input id='nameinp 'type="name" name='name' class="form-control" placeholder="Your Name">
+			  </div>
+			  <div class="form-group">
+			    <label for="messageinp">Message</label>
+			    <textarea id='messageinp' rows='10' name='message' class="form-control" placeholder="Your Message"></textarea>
+			  </div>   
+			  <button type="submit" class="btn btn-primary">Contact Sitaare</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
 
 
     <!-- Scripts -->
-
-	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-
 	    <script src='./js/nav.js'></script>
+
+		<script>
+		(function() { 
+            Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js');
+			Galleria.run('.galleria', {responsive: true});
+        }());
+    	</script>
+
 
   </body>
 </html>

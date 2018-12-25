@@ -16,7 +16,11 @@
   	margin: auto;
 }
 
-.member{
+.member1 {
+	padding: 5%;
+}
+
+.member2 {
 	padding: 5%;
 }
 
@@ -54,6 +58,16 @@
 	margin: auto;
 }
 
+.memberdes:hover{
+	text-shadow: 2px 2px 8px black;
+	color: white;
+	opacity: 0.9;
+}
+
+.onhover img {
+	border-radius: 4%;
+}
+
 
 .details {
 	transition: background 200ms ease-in-out;
@@ -77,13 +91,13 @@
 
 .onhover:hover .details{
 	opacity: 1; 
-	background: rgba(0,0,0, .7);
+	background: rgba(57,57,63, .7);
 	transition: background 200ms ease-in-out;
 }
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
 
 	.two {
 		display: block;
@@ -95,5 +109,5 @@
 		max-width: 90%;
 	}
 
-
 }
+

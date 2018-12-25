@@ -1,0 +1,31 @@
+#contact {
+	background-color: black;
+	height: 100vh;
+}
+
+h4 {
+	text-align: center;
+	font-family:  'Avenir Next', 'Arial', sans-serif;
+
+}
+
+.contactform {
+	min-width: 40%;
+	margin: auto;
+}
+
+.contactform button {
+	background-color: #770204;
+	border-color: #770204;
+}
+
+label {
+	color: white;
+	font-family:  'Avenir Next', 'Arial', sans-serif;
+	text-align: right;
+}
+
+
+/*.form-group {
+	border-radius: 5%;
+}*/

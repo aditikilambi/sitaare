@@ -39,3 +39,21 @@
 
 }
 
+
+@media screen and (min-width: 600) {
+
+	#title {
+		position: absolute;
+		bottom: 20vh;
+		color: white;
+		font-family:  'Avenir Next', 'Arial', sans-serif;
+		width: 60vw;
+		margin: auto;
+	}
+
+	#sitaare {
+		max-width: 60%;
+	}
+
+}
+
