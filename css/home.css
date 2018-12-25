@@ -16,44 +16,39 @@
 
 #title {
 	position: absolute;
-	bottom: 35vh;
 	color: white;
 	font-family:  'Avenir Next', 'Arial', sans-serif;
 	width: 100vw;
+
 }
 
-#sitaare {
+ #title {
 	text-align: center;
-	font-size: 80px;
-	font-weight: 3;
-	margin: 0;
-	opacity: 0.9;
-	text-shadow: 2px 2px 8px black;
+/*	font-size: 80px;
+	font-weight: 3;*/
+	margin: auto;
+/*	opacity: 0.9;
+	text-shadow: 2px 2px 8px black;*/
+}
+
+#title img {
+	max-width: 90%;
 }
 
 #des {
 	text-align: center;
 	font-weight: 1;
 	opacity: 0.8;
+	color: white;
+	width: 70%
 	text-shadow: 2px 2px 8px black;
 
 }
-
-
-@media screen and (min-width: 600) {
-
-	#title {
-		position: absolute;
-		bottom: 20vh;
-		color: white;
-		font-family:  'Avenir Next', 'Arial', sans-serif;
-		width: 60vw;
-		margin: auto;
+/*
+@media screen and (max-width: 900px) {
+	#title img {
+		
 	}
 
-	#sitaare {
-		max-width: 60%;
-	}
-
-}
+}*/
 

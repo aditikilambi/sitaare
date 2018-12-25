@@ -5,6 +5,8 @@ html {
 #nav {
 	background: rgba(0,0,0,.5);
 	transition: background 200ms linear;
+/*	position: fixed;
+	width: 100%;*/
 }
 
 .rightalign {

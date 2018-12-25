@@ -15,6 +15,7 @@ h4 {
 form {
 	width: 50%;
 	margin: auto;
+	padding-bottom: 20px;
 }
 
 .btn-primary {
@@ -31,7 +32,8 @@ label {
 
 footer {
 	text-align: center;
-	background-color: black;
+	background-color: #39393F;
+	padding-top: 20px;
 }
 
 ul#menu li {
@@ -41,6 +43,10 @@ ul#menu li {
 
 .contactbutt span:hover{
 	color: #770204;
+}
+
+#hello {
+	background-color: #39393F;
 }
 
 @media screen and (max-width: 900px) {
