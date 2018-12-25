@@ -97,17 +97,5 @@
 
 
 
-@media screen and (max-width: 900px) {
 
-	.two {
-		display: block;
-		max-width: 90%;
-	}
-
-	.three {
-		display: block;
-		max-width: 90%;
-	}
-
-}
 

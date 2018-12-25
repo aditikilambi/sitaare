@@ -1,6 +1,5 @@
 #contact {
 	background-color: black;
-	height: 100vh;
 }
 
 h4 {
@@ -10,11 +9,14 @@ h4 {
 }
 
 .column {
-	min-width: 40%;
-	margin: auto;
-	 float: left;
-
+	width: 100%;
 }
+
+form {
+	width: 50%;
+	margin: auto;
+}
+
 .btn-primary {
 	background-color: #770204!important;
 	border-color: #770204!important;
@@ -24,21 +26,6 @@ label {
 	color: white;
 	font-family:  'Avenir Next', 'Arial', sans-serif;
 	text-align: right;
-}
-
-.left {
-  width: 25%;
-}
-
-.right {
-  width: 75%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 
@@ -56,6 +43,10 @@ ul#menu li {
 	color: #770204;
 }
 
-/*.form-group {
-	border-radius: 5%;
-}*/
+@media screen and (max-width: 900px) {
+	form {
+		width: 70%;
+		margin: auto;
+	}
+
+}
