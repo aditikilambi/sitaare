@@ -9,14 +9,15 @@ h4 {
 
 }
 
-.contactform {
+.column {
 	min-width: 40%;
 	margin: auto;
-}
+	 float: left;
 
-.contactform button {
-	background-color: #770204;
-	border-color: #770204;
+}
+.btn-primary {
+	background-color: #770204!important;
+	border-color: #770204!important;
 }
 
 label {
@@ -25,6 +26,35 @@ label {
 	text-align: right;
 }
 
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+	text-align: center;
+	background-color: black;
+}
+
+ul#menu li {
+  display:inline;
+    padding-left: 0px;
+}
+
+.contactbutt span:hover{
+	color: #770204;
+}
 
 /*.form-group {
 	border-radius: 5%;

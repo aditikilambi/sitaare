@@ -19,6 +19,9 @@ if($_POST["message"]) {
 
 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+	    <!-- Material Design -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/css/mdb.min.css" rel="stylesheet">
+
 	    <!-- Custom -->
 
 	    <link rel="stylesheet" href="./css/home.css">
@@ -372,29 +375,46 @@ if($_POST["message"]) {
 	<div id='contact'>
 		<h1 class='header'>contact us</h1>
 		<div class='row'>
-		<div class='contactform'>
-			<h4 style='color: white'>Send Sitaare a Message</h4>
-			<br>
-			<form action="https://formspree.io/ucsdsitaare@gmail.com" method="POST">
-			  <div class="form-group">
-			    <label for="nameinp">Name</label>
-			    <input id='nameinp 'type="name" name='name' class="form-control" placeholder="Your Name">
-			  </div>
-			  <div class="form-group">
-			    <label for="messageinp">Message</label>
-			    <textarea id='messageinp' rows='10' name='message' class="form-control" placeholder="Your Message"></textarea>
-			  </div>   
-			  <button type="submit" class="btn btn-primary">Contact Sitaare</button>
-			</form>
+			<div class='column left'>
+				<h4 style='color: white'>Send Sitaare a Message</h4>
+				<p style='color: white; text-align: center'>Bookings, Alumni Group, Audition Inquiries, and More</p>
+				<br>
+				<form action="https://formspree.io/ucsdsitaare@gmail.com" method="POST">
+				  <div class="form-group">
+				    <label for="nameinp">Name</label>
+				    <input id='nameinp 'type="name" name='name' class="form-control" placeholder="Your Name">
+				  </div>
+				  <div class="form-group">
+				    <label for="messageinp">Message</label>
+				    <textarea id='messageinp' rows='10' name='message' class="form-control" placeholder="Your Message"></textarea>
+				  </div>   
+				  <button type="submit" class="btn btn-primary">Contact Sitaare</button>
+				</form>
+			</div>
+			<div class='column right'>
 			</div>
 		</div>
 	</div>
-
+	<footer class="page-footer font-small">
+		<p style='color: white; text-align: center'>Follow us!</p>
+		<ul id="menu" style="padding-left: 0px; margin-bottom: 0px">
+	          <li><a href="https://www.facebook.com/UCSD.Sitaare/" title="Sitaare on Facebook" class="contactbutt"><span class="fa fa-facebook fa-2x ">&nbsp;</span></a> </li>
+	          <li><a href="https://instagram.com/ucsdsitaare" title="Sitaare on Instagram" class="contactbutt"><span class="fa fa-instagram fa-2x">&nbsp;</span></a> </li>
+	          <li><a href="https://www.youtube.com/channel/UCNBXnMtWGRc-OMRMBOv8U3Q/" title="Sitaare on YouTube" class="contactbutt"><span class="fa fa-youtube fa-2x">&nbsp;</span></a> </li>
+	          <li><a href="mailto:ucsdsitaare@gmail.com" title="Send an Email" class="contactbutt"><span class="fa fa-envelope fa-2x">&nbsp;</span></a> </li>
+	    </ul>
+    	<div class="footer-copyright text-center py-3">© 2018 Copyright:
+	      <a href="https://www.github.com/aditikilambi"> Aditi Kilambi</a>
+	    </div>
+	  </footer>
+	  <!-- Footer -->
 
 
     <!-- Scripts -->
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	    <!-- MDB core JavaScript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/js/mdb.min.js"></script>
 
 	    <script src='./js/nav.js'></script>
 
