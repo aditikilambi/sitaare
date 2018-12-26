@@ -1,8 +1,9 @@
 #gallery{
 	display: block;
 	background-image: linear-gradient(#39393F, black);
-	height: 250vh;
-}
+	height: -webkit-fit-content;
+/*	height: 250vh;
+*/}
 
 #galleries {
 	margin:20px auto;

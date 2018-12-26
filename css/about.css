@@ -4,14 +4,25 @@
 }
 
 .header {
-/*	position: fixed;
-*/	font-family:  'Avenir Next', 'Arial', sans-serif;
+	font-family:  'Avenir Next', 'Arial', sans-serif;
 	color: white;
 	text-align: right;
 	padding: 7%;
 	padding-top: 75px;
 	padding-bottom: 30px;
 	text-shadow: 2px 2px 8px black;
+
+}
+
+
+#des {
+	text-align: center;
+	opacity: 0.8;
+	color: white;
+	max-width: 90%;
+	margin: auto;
+	text-shadow: 2px 2px 8px black;
+	padding-bottom: 10px;
 
 }
 
