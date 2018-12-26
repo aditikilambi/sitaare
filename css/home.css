@@ -37,7 +37,6 @@
 
 #des {
 	text-align: center;
-	font-weight: 1;
 	opacity: 0.8;
 	color: white;
 	width: 70%
@@ -47,7 +46,7 @@
 /*
 @media screen and (max-width: 900px) {
 	#title img {
-		
+
 	}
 
 }*/
