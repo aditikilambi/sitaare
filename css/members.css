@@ -26,8 +26,8 @@
 
 
 .three {
-	display: inline-block;
-	display: grid;
+/*	display: inline-block;
+*/	display: grid;
   	grid-template-columns: auto auto auto;
   	max-width: 90%;
   	margin: auto;
@@ -99,6 +99,7 @@
 @media screen and (max-width: 900px) {
 	.two {
 		display: block;
+		max-width: 90%;
 	}
 	.three {
 		display: block;
