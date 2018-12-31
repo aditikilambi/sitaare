@@ -23,3 +23,18 @@
    width: 80%;  
    margin: auto;       
 }
+
+#featuremessage {
+	color: white;
+	width: 90%;
+	margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+	.galleria {
+	   height: 300px ;       
+	   width: 90%;  
+	   margin: auto;       
+	}
+
+}
