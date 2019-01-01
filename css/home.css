@@ -17,18 +17,15 @@
 #title {
 	position: absolute;
 	color: white;
-	font-family:  'Avenir Next', 'Arial', sans-serif;
-	width: 100vw;
-
-}
-
- #title {
+/*	font-family:  'Avenir Next', 'Arial', sans-serif;
+*/	width: 100vw;
 	text-align: center;
 /*	font-size: 80px;
 	font-weight: 3;*/
 	margin: auto;
 /*	opacity: 0.9;
 	text-shadow: 2px 2px 8px black;*/
+	bottom: 28vh;
 }
 
 #title img {

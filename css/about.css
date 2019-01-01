@@ -4,8 +4,8 @@
 }
 
 .header {
-	font-family:  'Avenir Next', 'Arial', sans-serif;
-	color: white;
+/*	font-family:  'Avenir Next', 'Arial', sans-serif;
+*/	color: white;
 	text-align: right;
 	padding: 7%;
 	padding-top: 75px;
@@ -44,8 +44,8 @@
 .text {
 	padding: 5%;
 	color: white;
-	font-family:  'Avenir Next', 'Arial', sans-serif;
-}
+/*	font-family:  'Avenir Next', 'Arial', sans-serif;
+*/}
 
 @media screen and (max-width: 1200px) {
 
@@ -69,8 +69,8 @@
 		padding: 0px;
 		padding-bottom: 10%;
 		color: white;
-		font-family:  'Avenir Next', 'Arial', sans-serif;
-		text-align: justify;
+/*		font-family:  'Avenir Next', 'Arial', sans-serif;
+*/		text-align: justify;
 	}
 
 	.des {

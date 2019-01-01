@@ -4,6 +4,8 @@ html {
 
 body {
 	width: 100vw;
+	font-family:  'Raleway', 'Arial', sans-serif;
+
 }
 
 #nav {
@@ -20,7 +22,6 @@ body {
 .navbar-nav a {
 	margin-left: 25px;
 	margin-right: 25px;
-	font-family:  'Avenir Next', 'Arial', sans-serif;
 	color: white !important;
 }
 

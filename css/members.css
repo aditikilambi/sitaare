@@ -35,8 +35,8 @@
 
 .name {
 	color: white;
-	font-family:  'Avenir Next', 'Arial', sans-serif;
-	font-weight: 1;
+/*	font-family:  'Avenir Next', 'Arial', sans-serif;
+*/	font-weight: 1;
 	margin-bottom: 0;
 	margin-top: 10px;
 	opacity: 0.9;
@@ -45,8 +45,8 @@
 
 .voice {
 	color: white;
-	font-family:  'Avenir Next', 'Arial', sans-serif;
-	font-weight: 1;
+/*	font-family:  'Avenir Next', 'Arial', sans-serif;
+*/	font-weight: 1;
 	margin-bottom: 0;
 	margin-top: 0;
 	opacity: 0.4;
@@ -77,8 +77,8 @@
 	height: 275px;
 	opacity: 0;
 	color: white;
-	font-family:  'Avenir Next', 'Arial', sans-serif;
-	font-size: 16px;
+/*	font-family:  'Avenir Next', 'Arial', sans-serif;
+*/	font-size: 16px;
 }
 
 .details p {
