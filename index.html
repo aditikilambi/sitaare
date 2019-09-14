@@ -26,7 +26,7 @@
 	   	<link rel="stylesheet" href="./css/members.css">
 	   	<link rel="stylesheet" href="./css/gallery.css">
 	   	<link rel="stylesheet" href="./css/contact.css">
-
+	   	<link rel="stylesheet" href="./css/auditions.css">
 
 	   	<!-- For the Gallery -->
 	   	<script
@@ -42,6 +42,8 @@
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  	<!-- Navigation bar -->
   	<nav id='nav' class="navbar fixed-top navbar-expand-md navbar-dark">
     	<a class="navbar-brand" href="#"><img src='./images/logo.png'></a>
  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
@@ -50,35 +52,53 @@
     	<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
 	        <ul class="navbar-nav ml-auto">
 	            <li class="nav-item">
-	                <a class="nav-link" href="#about">about</a>
+	                <a class="link nav-link" href="#about">about</a>
 	            </li>
 	            <li class="nav-item">
-	                <a class="nav-link" href="#listen">listen</a>
+	                <a class="link nav-link" href="#listen">listen</a>
 	            </li>
 	           	<li class="nav-item">
-	                <a class="nav-link" href="#members">members</a>
+	                <a class="link nav-link" href="#members">members</a>
 	            </li>
 	           	<li class="nav-item">
-	                <a class="nav-link" href="#gallery">gallery</a>
+	                <a class="link nav-link" href="#gallery">gallery</a>
 	            </li>
-	           	<li class="nav-item">
-	                <a class="nav-link" href="#contact">contact</a>
+			    <li class="nav-item dropdown" id='contacttoggle'>
+			        <a class="link nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown"
+			          aria-haspopup="true" aria-expanded="false">find us</a>
+			        <div class="dropdown-menu dropdown-primary hide" aria-labelledby="navbarDropdownMenuLink" id="contactdropdown">
+				        <a href="https://www.facebook.com/UCSD.Sitaare/" title="Sitaare on Facebook" class="contactlink"><span class="fa fa-facebook fa-2x ">&nbsp;</span> facebook</a><br> 
+				        <a href="https://instagram.com/ucsdsitaare" title="Sitaare on Instagram" class="contactlink"><span class="fa fa-instagram fa-2x">&nbsp;</span> instagram </a><br>
+				        <a href="https://www.youtube.com/channel/UCNBXnMtWGRc-OMRMBOv8U3Q/" title="Sitaare on YouTube" class="contactlink"><span class="fa fa-youtube fa-2x">&nbsp;</span> youtube</a> <br>
+				        <a href="mailto:ucsdsitaare@gmail.com" title="Send an Email" class="contactlink"><span class="fa fa-envelope fa-2x">&nbsp;</span> email</a> <br><br>
+			        </div>
+			    </li>
+		        <li class="nav-item">
+	                <a id="audHigh" class="nav-link" href="#auditions">auditions 2019</a>
 	            </li>
 	        </ul>
     	</div>
 	</nav>
+
+	<!-- Home screen -->
 	<div id='home'>
 		<img id='homepic' src='./images/fullteam.png'>
 		<div id='title'>
 			<img id='sitaare' src='./images/titl2e.png'>		
 		</div>
 	</div>
+
+
+	<!-- About screen -->
 	<div id='about'>
 		<h1 class='header'>about</h1>
 		<h2 id='des'>UCSD'S PREMIER SOUTH ASIAN A CAPPELLA TEAM</h2>
 
+
+		<!-- Sitaare description -->
 		<div class='aboutimg'>
-			<img id='aboutimg' src='./images/about.png'>
+
+			<img id='aboutimg' src='https://farm5.staticflickr.com/4855/39958654473_a78d7189cf_k.jpg'>
 			<div class='text'>
 				<p>Sitaare is UCSD’s premier award-winning South Asian A Cappella team. Since its inception in 2006, Sitaare has taken pride in its diverse vocal talent, continuing to explore ways to showcase variety and creativity in their repertoire. Sitaare enjoys performing different genres of both Indian and Western music, from Bollywood and Indian classical, to R&B and pop.  </p> 
 				<p> In addition to UCSD’s cultural events, Sitaare has had the opportunity to perform at community events, weddings, and corporate events in San Diego, the Bay Area, and beyond.</p>
@@ -86,10 +106,22 @@
 			</div>
 		</div>	
 		<br><br><br>
+
+		<!-- Awards description -->
 		<h2 id='des'>AWARDS AND ACCOLADES</h2>
 		<div id='awards' class='aboutimg'>
-			<img id='awardsimg' src='./images/awards.jpg'>
+			<img id='awardsimg' src='https://farm5.staticflickr.com/4854/46923363421_e28037d28f_k.jpg'>
 			<div class='text'>
+				<br>
+
+				<!-- PUT 2019-2020 HERE -->
+				<h4>2018-2019 Season</h4>
+				<p><a href='https://youtu.be/DenYMsPOmZc?t=2773'><strong>Mehfil 2019:</strong></a> First Place</p>
+				<ul>
+					<li>
+						<p>Outstanding Female Soloist (Shweta Kumar)</p>
+					</li>					
+				</ul>
 				<br>
 				<h4>2017-2018 Season</h4>
 				<p><a href='https://www.youtube.com/watch?v=dWfKw0v7xlc'><strong>2018 All American Awaaz Bid</strong></a></p>
@@ -106,6 +138,8 @@
 					<li><p>Outstanding Female Soloist (Rama Kelkar)</p></li>
 					</ul>
 				<br>
+
+				<!-- REMOVE THIS SEASON TO MAKE EXTRA ROOM -->
 				<h4>2016-2017 Season</h4>
 				<p><a href='https://youtu.be/TCKG22T8dmo'><strong>Awaazein 2017:</strong></a> Second Place</p>
 					<ul>
@@ -115,25 +149,31 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- Listen Section, currently has Kham/Saaj -->
 	<div id='listen'>
 		<h1 class='header'>listen</h1>
 		<div id='video'>
-			<iframe width="560" height="315" align="middle" src="https://www.youtube.com/embed/dWfKw0v7xlc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/1GfzO56hz30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	</div>
+
+	<!-- Members section -->
 	<div id='members'>
 		<h1 class='header'>members</h1>
+		<!-- Grid is separated into div blocks with either 2 or 3 members
+		 in each. -->
 		<div id='membergrid'>
 			<div class='two'>
 				<div class='member1'>
 					<div class='onhover'>
 						<div class='details'>
-							<p>Hometown:<br> 
-							Major:<br>
+							<p>Hometown: Delhi, India<br> 
+							Major: Mathematics and Computer Science<br>
 							Graduating Class: 2020<br>
 							Sitaare since: 2017</p>
 						</div>
-						<img src='./images/holder.jpg'>
+						<img src='./images/member/ashvin.jpg'>
 					</div>
 					<div class='memberdes'>
 						<h3 class='name'>Ashvin Lakhwani</h3>
@@ -208,7 +248,7 @@
 					<div class='onhover'>
 						<div class='details'>
 							<p>Hometown: Cupertino, CA <br> 
-							Major: Cognitive Science/HCI<br>
+							Major: Cognitive Science<br>
 							Graduating Class: 2020<br>
 							Sitaare since: 2016</p>
 						</div>
@@ -237,12 +277,12 @@
 				<div class='member2'>
 					<div class='onhover'>
 						<div class='details'>
-							<p>Hometown:<br> 				
-							Major:<br>
+							<p>Hometown: San Ramon, CA<br> 				
+							Major: Computer Engineering<br>
 							Graduating Class: 2020<br>
 							Sitaare since: 2017</p>
 						</div>
-						<img src='./images/holder.jpg'>
+						<img src='./images/member/aditig.jpg'>
 					</div>						
 					<div class='memberdes'>
 						<h3 class='name'>Aditi Gaur</h3>
@@ -316,12 +356,12 @@
 				<div class='member1'>
 					<div class='onhover'>
 						<div class='details'>
-							<p>Hometown:<br>
-							Major:<br>
+							<p>Hometown: Delhi, India<br>
+							Major: Computer Science <br>
 							Graduating Class: 2020<br>
 							Sitaare since: 2018</p>
 						</div>
-						<img src='./images/holder.jpg'>
+						<img src='./images/member/madhav.jpg''>
 					</div>						
 					<div class='memberdes'>
 						<h3 class='name'>Madhav Mathur</h3>
@@ -378,40 +418,55 @@
 			</div>
 		</div>
 	</div>
+
+	<!--  Gallery Page  -->
 	<div id='gallery'>
 		<h1 class='header'>gallery</h1>
 		<div id = 'galleries'>
 			<h2 class='galleryheader'>Sitaare 2018-2019</h2>
+			<!--  For each gallery you input, make sure it has the 
+				galleria class  -->
          	<div class="galleria">
          			<img src='./images/fullteam.png'>
-<!--          		<img src='./images/holder.jpg'>
- -->       		</div>
-       		<br>
-       		<br>
-       		<h2 class='galleryheader'>Sitaare 2017-2018</h2>
-       		<div class="galleria">
-       			<img src='https://scontent-sjc3-1.xx.fbcdn.net/v/t31.0-8/25488305_10156073302969374_5976182735293290108_o.jpg?_nc_cat=108&_nc_ht=scontent-sjc3-1.xx&oh=3d8571c67fa4429603bd567832428538&oe=5C8E3F03'>
-       			<img src='https://scontent-sjc3-1.xx.fbcdn.net/v/t31.0-8/25487212_10156073303254374_3663661849959229228_o.jpg?_nc_cat=109&_nc_ht=scontent-sjc3-1.xx&oh=cd7f7febdbf26745ccf514cfe6bf5f06&oe=5CC603A1'>
-       			<img src='https://scontent-sjc3-1.xx.fbcdn.net/v/t31.0-8/25588187_10156073302539374_7759048132505499488_o.jpg?_nc_cat=111&_nc_ht=scontent-sjc3-1.xx&oh=e2ed9f829d1bef39e87adc99a570fd0e&oe=5C8FD3AC'>
-       			<img src='https://scontent-sjc3-1.xx.fbcdn.net/v/t31.0-8/25531876_10156073302874374_3726109421029608392_o.jpg?_nc_cat=100&_nc_ht=scontent-sjc3-1.xx&oh=06c94d65565a640245e006d5ecd3fc4d&oe=5CC6F11F'>
-       			<img src='https://scontent-sjc3-1.xx.fbcdn.net/v/t31.0-8/25487399_10156073302779374_8900789160966912430_o.jpg?_nc_cat=107&_nc_ht=scontent-sjc3-1.xx&oh=940b55d3255f5367f7e638f1f83aa520&oe=5CCD51EE'>
-         		<img src='https://photos.smugmug.com/Sahana-Acappella/i-XdVVzKb/0/25edde17/X3/DSC_0148-X3.jpg'>
-         		<img src='https://photos.smugmug.com/Sahana-Acappella/i-rB9Z5gd/0/ec0256d7/X3/DSC_0318-X3.jpg'>
-         		<img src='https://photos.smugmug.com/Sahana-Acappella/i-Gg2xL26/0/db94d6cc/X3/DSC_0060-X3.jpg'>
-         		<img src='https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/37272494_1751142308308479_1421125006603059200_o.jpg?_nc_cat=109&_nc_ht=scontent-sjc3-1.xx&oh=bc0c7c1aca571cb6ec3f593d1799d26a&oe=5CBC3C9A'>
-         
-       		</div>
-       		<br>
-       		<br>
-       		<h2 class='galleryheader'>Sitaare 2016-2017</h2>
-       		<div class="galleria">
-         		<img src='./images/holder.jpg'>
-       		</div>
-       		<br>
-       		<p id='featuremessage'> Would you like to see your photo featured? <a href="#contact" style='color: #770204'> Contact us! </a></p>
+         			<img src='./images/gallery/201819/1.jpg'>
+         			<img src='./images/gallery/201819/2.jpg'>
+         			<img src='./images/gallery/201819/3.jpg'>
+         			<img src='./images/gallery/201819/4.jpg'>
+         			<img src='./images/gallery/201819/5.jpg'>
+         			<img src='./images/gallery/201819/6.jpg'>
+         			<img src='./images/gallery/201819/7.jpg'>
+         			<img src='./images/gallery/201819/8.jpg'>
+         			<img src='./images/gallery/201819/9.jpg'>
+ 
         </div>
 	</div>
-	<div id='contact'>
+	<div id='auditions'>
+		<h1 class='header'>auditions 2019</h1>
+
+		<div id="tagline">
+			<h1 id="awesome">sing. perform. travel. compete. win.</h1>
+			<h3>Join our family</h3>
+
+		</div>
+				<!-- Sitaare description -->
+		<div class='aboutimg'>			
+			<img id='aboutimg' src='./images/fullteam.png'>			
+			<div class='text'>
+				<p>Do you love music? If so you're in the right place.  Sitaare is our home away from home and we're super excited to hold our 2019 auditions. </p> 
+				<p> No musical experience is necessary.  Our team members come from all musical backgrounds, from high school choir to Carnatic classical to shower singing. There is no doubt that we can make a place for you here.</p>
+				<h2>How to audition: </h2>
+				<ol>
+					<li>Prepare a 30 second to 1 minute long solo in whatever style you are most comfortable (western, hindi, classical, whatever!)</li>
+					<li>Sign up for an audition at ____ or just walk in! </li>
+					<li>Come meet us at your audition time. We'll ask for your solo and do a couple pitch exercises.</li>
+					<li>If we are impressed with your audition, we will personally invite you to callbacks, where we will teach you a piece from our 2019 competition set! </li>
+				</ol>
+
+			</div>
+		</div>
+		<h4 id="endline">Best of luck and we can't wait to meet you!</h4>
+	</div>
+<!-- 	<div id='contact'>
 		<h1 class='header'>contact us</h1>
 			<div class='column left'>
 				<h4 style='color: white'>Send Sitaare a Message</h4>
@@ -430,7 +485,7 @@
 				</form>
 			</div>	<br>
 
-	</div>
+	</div> -->
 	<footer class="page-footer font-small">
 		<p style='color: white; text-align: center'>Stay in touch!</p>
 		<ul id="menu" style="padding-left: 0px; margin-bottom: 0px">

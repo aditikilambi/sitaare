@@ -66,5 +66,12 @@ ul#menu li {
 		margin: auto;
 	}
 
+	#audHigh {
+		margin-left: 25px;
+		margin-right: 25px;
+		background-color: inherit;
+		color: white !important;
+	}
+
 
 }
