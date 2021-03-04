@@ -1,0 +1,87 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+	width: 100vw;
+	font-family:  'Raleway', 'Arial', sans-serif;
+
+}
+
+#nav {
+	background: rgba(0,0,0,.8);
+	transition: background 200ms linear;
+/*	position: fixed;
+	width: 100%;*/
+}
+
+.rightalign {
+  justify-content: flex-end;
+}
+
+.navbar-nav .link {
+	margin-left: 25px;
+	margin-right: 25px;
+	color: white !important;
+}
+
+.navbar-nav .link:hover {
+	color: #D1D1D4 !important;
+	text-shadow: 2px 2px 8px black;
+	transition: all .35s ease-in-out;
+}
+
+
+
+.fixed-top.scrolled {
+  background-color: #770204 !important;
+  transition: background-color 200ms linear;
+}
+
+#audHigh {
+	margin-left: 25px;
+	margin-right: 25px;
+	background-color: #353532 !important;
+	color: white !important;
+}
+
+.contactlink{
+	padding-top: 25px;
+	color: white !important;
+}
+
+.contactlink span{
+	color: white;
+}
+
+.contactlink span:hover{
+	color: gray;
+}
+
+#contactdropdown {
+   border:0px;
+   outline:0px;
+   border-radius: 0px;
+   margin-top: 15px;
+   text-align: center;
+}
+
+
+.dropdown .dropdown-menu {
+    transition: all 0.5s;
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.dropdown.show .dropdown-menu { /* For Bootstrap 4, use .dropdown.show instead of .dropdown.open */
+    max-height: 300px;
+    opacity: 1;
+}
+
+.hide {
+	display: none;
+}
+
+

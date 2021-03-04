@@ -1,0 +1,40 @@
+#gallery{
+	display: block;
+	background-image: linear-gradient(#39393F, black);
+	height: -webkit-fit-content;
+/*	height: 250vh;
+*/}
+
+#galleries {
+	margin:20px auto;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.galleryheader {
+	color: white;
+/*	font-family:  'Avenir Next', 'Arial', sans-serif;
+*/	font-weight: 1;
+}
+
+.galleria {
+   height: 450px ;       
+   width: 80%;  
+   margin: auto;       
+}
+
+#featuremessage {
+	color: white;
+	width: 90%;
+	margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+	.galleria {
+	   height: 300px ;       
+	   width: 90%;  
+	   margin: auto;       
+	}
+
+}

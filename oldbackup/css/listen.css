@@ -1,0 +1,24 @@
+#listen {
+	display: block;
+	background-image: linear-gradient(black, #39393F);
+}
+
+#video {
+	max-width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+iframe {
+    height: 70%;
+    width: 70%;
+    size: 90%;
+}
+
+@media screen and (max-width: 900px) {
+	iframe {
+	    height: 50%;
+	    width: 90%;
+
+	}
+}

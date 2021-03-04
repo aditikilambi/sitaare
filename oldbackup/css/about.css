@@ -1,0 +1,106 @@
+#about {
+	display: block;
+	background-image: linear-gradient(#39393F, black);
+}
+
+.header {
+/*	font-family:  'Avenir Next', 'Arial', sans-serif;
+*/	color: white;
+	text-align: right;
+	padding: 7%;
+	padding-top: 75px;
+	padding-bottom: 30px;
+	text-shadow: 2px 2px 8px black;
+
+}
+
+
+#des {
+	text-align: center;
+	opacity: 0.8;
+	color: white;
+	max-width: 90%;
+	margin: auto;
+	text-shadow: 2px 2px 8px black;
+	padding: 1%;
+
+}
+
+.aboutimg{
+	display: flex;
+	max-width: 90%;
+	margin: auto;
+	justify-content: center;
+    align-items: center;
+}
+
+
+.aboutimg img{
+	flex-shrink: 0;
+    min-width: 30%;
+    min-height: 30%;
+    width: 50%;
+}
+
+#awardsimg {
+    width: 60%;
+}
+
+
+.text {
+	padding: 5%;
+	color: white;
+/*	font-family:  'Avenir Next', 'Arial', sans-serif;
+*/}
+
+.aboutimage h4 {
+	text-align: left;
+}
+
+#awards p {
+	margin: 0;
+}
+
+#awards a {
+	color: white;
+	opacity: 0.7;
+}
+
+
+@media screen and (max-width: 1100px) {
+
+	.aboutimg{
+		display: block;
+		margin: auto;
+		justify-content: center;
+	    align-items: center;
+	    max-width: 80%;
+	}
+
+	.aboutimg img{
+		flex-shrink: 0;
+	    min-width: 100%;
+	    max-width: 60%;
+	    min-height: 100%;
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+	}
+
+	.text {
+		padding: 0px;
+		padding-bottom: 10%;
+		color: white;
+/*		font-family:  'Avenir Next', 'Arial', sans-serif;
+*/		text-align: justify;
+	}
+
+	#awards .text {
+		text-align: left;
+	}
+
+
+	.des {
+		font-size: 15px;
+	}
+}
+

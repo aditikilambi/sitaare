@@ -1,0 +1,77 @@
+#contact {
+	background-color: black;
+}
+
+#contact h4 {
+	text-align: center;
+/*	font-family:  'Avenir Next', 'Arial', sans-serif;
+*/
+}
+
+.column {
+	width: 100%;
+}
+
+form {
+	width: 50%;
+	margin: auto;
+	padding-bottom: 20px;
+}
+
+.btn-primary {
+	background-color: #770204!important;
+	border-color: #770204!important;
+}
+
+label {
+	color: white;
+/*	font-family:  'Avenir Next', 'Arial', sans-serif;
+*/	text-align: right;
+}
+
+
+footer {
+	text-align: center;
+	background-color: #39393F;
+	padding-top: 20px;
+}
+
+ul#menu li {
+  display:inline;
+    padding-left: 0px;
+}
+
+.contactbutt span{
+	color: white;
+}
+
+.contactbutt span:hover{
+	color: #770204;
+}
+
+#hello {
+	background-color: #39393F;
+}
+
+#cinfo {
+	color: white; 
+	text-align: center; 
+	width: 90%; 
+	margin: auto
+}
+
+@media screen and (max-width: 900px) {
+	form {
+		width: 70%;
+		margin: auto;
+	}
+
+	#audHigh {
+		margin-left: 25px;
+		margin-right: 25px;
+		background-color: inherit;
+		color: white !important;
+	}
+
+
+}
